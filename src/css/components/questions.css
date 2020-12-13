@@ -1,0 +1,14 @@
+.questions {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 770px;
+  padding: 0;
+  list-style: none;
+}
+
+@media screen and (max-width: 800px) {
+  .questions {
+    max-width: 570px;
+  }
+}

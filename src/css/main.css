@@ -1,0 +1,18 @@
+@import "./base/base.css";
+
+/* @import "./layout.css"; */
+@import "./components/header.css";
+@import "./components/circle.css";
+@import "./components/logo.css";
+@import "./components/menu.css";
+@import "./components/lead.css";
+@import "./components/form.css";
+@import "./components/about.css";
+@import "./components/faq.css";
+@import "./components/questions.css";
+@import "./components/collapse.css";
+@import "./components/examples.css";
+@import "./components/vacancy.css";
+@import "./components/footer.css";
+@import "./components/contacts.css";
+@import "./components/copyright.css";

@@ -1,0 +1,19 @@
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: hidden; 
+}
+ 
+.copyright__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 500;
+  width: 115px;
+  height: 115px;
+  margin-bottom: -27px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+}

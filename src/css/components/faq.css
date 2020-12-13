@@ -1,0 +1,36 @@
+.faq {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 55px 65px;
+  background-color: var(--color-bg);
+}
+
+.faq::after {
+  content: "";
+  position: absolute;
+  left: calc(50% - 31px);
+  bottom: -31px;
+  display: block;
+  width: 62px;
+  height: 31px;
+  border-bottom-left-radius: 62px;
+  border-bottom-right-radius: 62px;
+  background-color: var(--color-primary);
+}
+
+.faq__title {
+  margin-bottom: 0;
+}
+
+.faq__questions {
+  margin-bottom: 60px;
+}
+
+@media screen and (max-width: 560px) {
+  .faq {
+    padding-left: 20px;
+    padding-right: 20px;
+  }  
+}

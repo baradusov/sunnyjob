@@ -1,0 +1,138 @@
+.header {
+  position: relative;
+  z-index: 3;
+  background-color: var(--color-bg);
+  overflow-x: hidden;
+}
+
+.header--inner {
+  position: relative;
+  min-height: 748px;
+  max-width: 1368px;
+  padding-top: 23px;
+  padding-bottom: 100px;
+  padding-right: 100px;
+  padding-left: 100px;
+  margin: 0 auto;
+}
+
+.header__inner--logo {
+  display: flex;
+  margin-bottom: 110px;
+}
+
+.header__lead {
+  margin-bottom: 90px;
+}
+
+.header__logo {
+  margin-right: 25px;
+}
+
+.header__circle {
+  position: absolute;
+  top: -160px;
+  right: -185px;
+  z-index: -1;
+}
+
+.header__menu-button {
+  position: fixed;
+  z-index: 4;
+  right: 20px;
+  top: 20px;
+  display: none;
+  width: 20px;
+  height: 16px;
+  padding: 20px;
+  appearance: none;
+  background-color: transparent;
+  background-image: url("/images/icons/icon_menu.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.header__menu-button.opened {
+  /* right: 35px; */
+  background-image: url("/images/icons/icon_close.svg");
+}
+
+@media screen and (max-width: 1024px) {
+  .header__circle {
+    top: -40px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .header--inner {
+    padding-left: 55px;
+    padding-right: 55px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header__inner--logo {
+    margin-bottom: 45px;
+  }
+  
+  .header__circle {
+    top: 300px;
+    right: -70px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .header__logo {
+    margin-top: 0;
+  }
+  
+  .header__menu-button {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .header {
+    padding-bottom: 155px;
+  }
+  
+  .header--inner {
+    padding-bottom: 210px;
+    z-index: 0
+  }
+  
+  .header__circle {
+    top: auto;
+    bottom: -152px;
+    left: calc(20% - 90px);
+    right: 0;
+    margin: auto;
+  }
+  
+  .header__form {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .header {
+    background-color: transparent;
+  }
+  
+  .header--inner {
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: var(--color-bg);
+  }
+  
+  .header__inner--logo {
+    margin-bottom: 0;
+  }
+  
+  .header__lead {
+    margin-bottom: 40px;
+  }
+}

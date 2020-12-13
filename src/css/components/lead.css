@@ -1,0 +1,38 @@
+.lead {
+  max-width: 560px;
+}
+
+.lead__title {
+  margin-bottom: 15px;
+}
+
+.lead__description {
+  margin: 0;
+  font-size: 22px;
+  line-height: 1.6;
+  padding-right: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .lead__description {
+    max-width: 320px;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .lead__description {
+    max-width: none;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .lead__title {
+    font-size: 28px;
+    line-height: 38px;
+  }  
+  
+  .lead__description {
+    font-size: 18px;
+    line-height: 26px;
+  }  
+}

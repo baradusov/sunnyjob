@@ -1,0 +1,52 @@
+.collapse {
+  padding: 26px 5px;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.collapse__title {
+  position: relative;
+  padding-right: 30px;
+  font-size: 20px;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+}
+
+.collapse__title::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-image: url("/images/icons/icon_plus.svg");
+  background-repeat: no-repeat;
+  transition: transform 0.1s ease-in-out;
+}
+
+.collapse[open] .collapse__title::after {
+  transform: rotate(45deg);
+  transition: transform 0.1s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .collapse__title::after,
+  .collapse[open] .collapse__title::after {
+    transition: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .collapse__title {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .collapse__title {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
